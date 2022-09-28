@@ -1,0 +1,49 @@
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:275,200,400,500,600');
+
+$width-map: (
+        sm:640px,
+        md:768px,
+        lg:1024px,
+        xl:1280px,
+        xxl:1536px
+);
+
+
+* {
+  //Global conf
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.container {
+  padding: 0 32px;
+  width: 100%;
+  max-width: 1110px;
+  @media (min-width: 768px) {
+    padding: 0 39px;
+  }
+  @media (min-width: 1200px) {
+    margin: auto;
+  }
+}
+
+.d-block {
+  display: block;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  @media (min-width: 992px) {
+    position: absolute;
+    bottom: 50px;
+  }
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
