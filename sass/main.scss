@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css?family=Poppins:275,200,400,500,600');
+@import url('https://fonts.googleapis.com/css?family=Karla:275,200,400,500,600');
 
 $width-map: (
         sm:640px,
@@ -15,8 +14,30 @@ $width-map: (
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Karla', serif;
+  font-style: normal;
+  font-weight: 400;
 }
 
+p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.2px;
+  color: #9AA7BE;
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 15px;
+}
+
+li {
+  font-size: 14px;
+  line-height: 20px;
+
+  letter-spacing: -0.175px;
+}
 
 
 .container {
@@ -31,8 +52,108 @@ $width-map: (
   }
 }
 
+.main {
+  background-color: #E6EFF5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.price {
+  &-grid {
+    background-color: #ffffff;
+    box-shadow: 0px 15px 30px rgba(0, 81, 171, 0.148847);
+    border-radius: 8px;
+    max-width: 635px;
+    margin: 72px 32px 62px;
+    @media (min-width: 992px) {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+    }
+  }
+
+  &-join {
+    width: 100%;
+    padding: 40px;
+
+    &-title {
+
+    }
+
+    &-subtitle {
+      margin-top: 24px;
+      margin-bottom: 16px;
+      @media (min-width: 992px) {
+        margin-bottom: 11px;
+      }
+    }
+
+    &-content {
+
+    }
+  }
+
+  &-subscription {
+    padding: 40px;
+
+    flex: 1;
+    &-abonnement {
+      display: flex;
+      gap: 11px;
+      align-items: center;
+      margin-bottom: 4px;
+      margin-top: 18px;
+    }
+
+    &-value {
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 37px;
+      letter-spacing: -0.4px;
+    }
+
+    &-modality {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      letter-spacing: -0.2px;
+      opacity: 0.5;
+    }
+  }
+
+  &-why {
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.15);
+    mix-blend-mode: normal;
+    flex: 1;
+  }
+
+  &-two {
+    background-color: #2AB3B1;
+    @media (min-width: 992px) {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}
+
 .d-block {
   display: block;
+}
+
+.btn {
+  display: block;
+  padding: 15px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  width: 100%;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.0973011);
+  border-radius: 5px;
+  margin-top: 26px;
 }
 
 .attribution {
@@ -41,6 +162,40 @@ $width-map: (
   @media (min-width: 992px) {
     position: absolute;
     bottom: 50px;
+  }
+}
+
+.color {
+  &-white {
+    color: white;
+  }
+
+  &-lemon-green {
+    color: #C0DF33;
+  }
+
+  &-green {
+    color: #2AB3B1;
+  }
+}
+
+.title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.3px;
+}
+
+.subtitle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: -0.225px;
+}
+
+.bg {
+  &-lemon-green {
+    background-color: #C0DF33;
   }
 }
 
